@@ -9,10 +9,11 @@ const Profiles = () => {
 
       const eventData = JSON.parse(event.data)
 
-      console.log('Event' + event)
+      console.log(event)
+      console.log(eventData)
     })
 
-    console.log('new')
+    console.log('new2')
   }, [])
   return (
     <div>
