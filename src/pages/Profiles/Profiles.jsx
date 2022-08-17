@@ -9,7 +9,7 @@ const Profiles = () => {
 
       const eventData = JSON.parse(event.data)
 
-      console.log(event)
+      console.log('Event' + event)
     })
   }, [])
   return (
