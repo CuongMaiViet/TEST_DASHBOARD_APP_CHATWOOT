@@ -1,20 +1,16 @@
 import React, { useEffect } from 'react'
 
 const Profiles = () => {
-  useEffect(() => {
-    window.addEventListener('message', function (event) {
-      // if (!isJSONValid(event.data)) {
-      //   return
-      // }
+  window.addEventListener('message', function (event) {
+    if (!isJSONValid(event.data)) {
+      return
+    }
 
-      const eventData = JSON.parse(event.data)
-
-      console.log(event.data)
-      console.log(eventData)
-    })
-
-    console.log('new3')
-  }, [])
+    const eventData = JSON.parse(event.data)
+    console.log('test')
+    console.log(eventData)
+  })
+  
   return (
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci
