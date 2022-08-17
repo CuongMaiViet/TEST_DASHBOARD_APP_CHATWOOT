@@ -11,6 +11,8 @@ const Profiles = () => {
 
       console.log('Event' + event)
     })
+
+    console.log('new')
   }, [])
   return (
     <div>
