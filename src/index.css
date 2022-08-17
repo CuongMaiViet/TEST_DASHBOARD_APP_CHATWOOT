@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+:root {
+  /* COLOR */
+  --clr-primary: #2187c6;
+  --clr-gray: #9ca3af;
+  --clr-norm: #58677f;
+
+  /* SIDEBAR */
+  --sidebar-w: 26rem;
+  --sidebar-boxshadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0px;
+  color: var(--clr-norm);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar:hover {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-norm);
+}
+svg {
+  font-size: 1.6rem;
+}
+svg path {
+}

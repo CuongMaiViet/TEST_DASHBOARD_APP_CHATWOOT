@@ -1,0 +1,18 @@
+.pages {
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100%-0);
+    /* height: 100vh; */
+    transition: all 0.25s ease;
+}
+.pages.--active {
+    left: var(--sidebar-w);
+    width: calc(100%- (var(--sidebar-w)));
+}
+.pages__routes {
+    padding: 0 1rem;
+    text-align: justify;
+}
