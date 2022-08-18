@@ -1,18 +1,12 @@
-import { BrowserRouter } from 'react-router-dom'
-import './App.css'
-import { Sidebar } from './components'
-import { sidebarData } from './dummy'
-import Pages from './pages'
+import "./App.css";
+import Test from "./components/Test";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Sidebar data={sidebarData} />
-        <Pages />
-      </BrowserRouter>
+      <Test />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
