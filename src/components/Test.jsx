@@ -10,6 +10,8 @@ const Test = () => {
   useEffect(() => {
     window.addEventListener('message', function (event) {
       console.log(event.data)
+      console.log('-------------------')
+      console.log(JSON.parse(event.data))
     })
   }, [])
 
