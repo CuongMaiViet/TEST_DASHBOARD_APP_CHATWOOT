@@ -9,9 +9,13 @@ const Test = () => {
 
   useEffect(() => {
     window.addEventListener('message', function (event) {
-      console.log(event.data)
-      console.log('-------------------')
-      console.log(JSON.parse(event.data))
+      try {
+        const data = event.data
+
+        if (data && typeof data === 'object') console.log(JSON.parse(data))
+      } catch (error) {
+        console.log({ status: false, error })
+      }
     })
   }, [])
 
